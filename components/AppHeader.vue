@@ -1,46 +1,32 @@
 <template>
-    <Drawer v-model:visible="showMenu" header="Red Plug">
-        <div>
-
-            <Button label="About" text plain active fluid />
-                <Button label="Services" text plain fluid />
-                <Button label="Pricing" text plain fluid />
-        </div>
+    <Drawer v-model:visible="showMenu">
+        <template #header>
+            <AppLogo />
+        </template>
+        <AppMenu  @item-click="toggleMenu" />
     </Drawer>
-    <Toolbar>
-        <template #start>
-            <Button rounded outlined class="px-8 hidden md:block">
-                Red Plug
-            </Button>
-            <Button type="button" severity="secondary" class="block md:hidden" @click="showMenu = true">
+    <div class="p-4 md:p-6 flex justify-between items-center bg-surface-0 dark:bg-surface-900 z-10">
+        <div class="block md:hidden">
+            <Button type="button" severity="secondary" @click="toggleMenu">
                 <template #icon>
                     <Icon name="heroicons:bars-3" />
                 </template>
             </Button>
-            <div class="hidden md:flex gap-x-2 ms-5">
-                <Button label="About" text plain active />
-                <Button label="Services" text plain />
-                <Button label="Pricing" text plain />
-            </div>
-        </template>
-
-        <template #center>
-            <Button rounded outlined class=" px-4 sm:px-8 block md:hidden">
-                Red Plug
-            </Button>
-            
-        </template>
-
-        <template #end>
-            <div class="flex items-center gap-2">
-                <DarkModeSwitch />
-            </div>
-        </template>
-    </Toolbar>
+        </div>
+        <AppLogo />
+        <div class="flex gap-x-14 items-center">
+            <AppMenu class="hidden md:flex" />
+            <DarkModeSwitch />
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">
 
 const showMenu = ref(false)
+
+const toggleMenu = () => {
+    showMenu.value = !showMenu.value
+}
 
 </script>

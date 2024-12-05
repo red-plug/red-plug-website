@@ -6,7 +6,7 @@ import Material from "@primevue/themes/material"
 import { definePreset } from '@primevue/themes'
 
 
-export default definePreset(Lara, {
+export default definePreset(Aura, {
     semantic: {
         primary: {
             50: 'rgb(var(--color-red-plug-50))',

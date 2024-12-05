@@ -13,6 +13,10 @@ export default <Partial<Config>>{
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Raleway'], //normal
+        serif: ['Alegreya Sans', 'Encode Sans', 'Ubuntu', 'Montserrat'] //title
+      },
       colors: {
         'red-plug': {
           '50': 'rgb(var(--color-red-plug-50))',
