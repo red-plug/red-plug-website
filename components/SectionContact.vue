@@ -1,6 +1,6 @@
 <template>
     <div class="bg-surface-0 dark:bg-surface-900 mb-8 md:mb-0">
-        <h2 class="text-3xl md:text-4xl font-semibold text-center pt-8 md:pt-16">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center pt-8 md:pt-16 px-8">
             ¿Quieres cotizar o tienes alguna duda?
         </h2>
         <h3 class="text-center mt-4 text-xl font-medium"> 
