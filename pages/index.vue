@@ -18,6 +18,6 @@ useSeoMeta({
     ogTitle: 'Red Plug',
     description: '',
     ogDescription: '',
-    ogImage: '/images/blog/red-plug/1.webp',
+    ogImage: '/images/blog/red-plug-website/1.webp',
 })
 </script>
