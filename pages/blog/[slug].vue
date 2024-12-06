@@ -82,7 +82,7 @@ const { data: entries, status } = await useAsyncData('blog-entries', () => query
                                                                 })
                                                                 .limit(4)
                                                                 .find(), {
-                                                                    server: false
+                                                                    server: true
                                                                 }) as any
 
 </script>

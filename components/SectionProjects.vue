@@ -47,7 +47,7 @@ const { data: entries } = await useAsyncData('home-entries', () => queryContent(
                                                                 })
                                                                 .limit(15)
                                                                 .find(), {
-                                                                    server: false
+                                                                    server: true
                                                                 }) as any
                                      
 </script>

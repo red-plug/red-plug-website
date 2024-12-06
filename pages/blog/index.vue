@@ -35,7 +35,7 @@
                         Aún no hemos escrito lo que buscas
                     </h3>
                     <p class="mt-2">
-                        De momento no tenemos ninguna entrada con ls parámetros de búsqueda. quiza deberías...
+                        De momento no tenemos ninguna entrada con los parámetros de búsqueda. quiza deberías...
                     </p>
                     <Button class="mt-4" @click="restoreFilters">
                         Reiniciar filtros
@@ -85,7 +85,7 @@ const { data: entries, status } = await useAsyncData('blog-entries', () => query
                                                                     weight: -1
                                                                 })
                                                                 .find(), {
-                                                                    server: false,
+                                                                    server: true,
                                                                     watch: [search, selectedTags]
                                                                 }) as any
 
