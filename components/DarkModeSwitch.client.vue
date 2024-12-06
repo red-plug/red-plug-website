@@ -1,7 +1,9 @@
 <template>
     <Button type="button" severity="secondary" @click="changeTheme">
         <template #icon>
-            <Icon :name="selectedTheme.icon" />
+            <Icon name="heroicons:computer-desktop" v-if="selectedTheme.key == 'system'" />
+            <Icon name="heroicons:sun" v-if="selectedTheme.key == 'light'" />
+            <Icon name="heroicons:moon" v-if="selectedTheme.key == 'dark'" />
         </template>
     </Button>
 </template>
@@ -9,9 +11,9 @@
 <script setup lang="ts">
 
 const themes = ref([
-    { 'key': 'system', 'label': 'System', 'icon': 'heroicons:computer-desktop' },
-    { 'key': 'light', 'label': 'Light', 'icon': 'heroicons:sun' },
-    { 'key': 'dark', 'label': 'Dark', 'icon': 'heroicons:moon' },
+    { 'key': 'system', 'label': 'System' },
+    { 'key': 'light', 'label': 'Light' },
+    { 'key': 'dark', 'label': 'Dark' },
 ])
 const colorMode = useColorMode()
 const index = ref<number>(0)
