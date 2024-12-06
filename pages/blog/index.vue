@@ -4,20 +4,20 @@
             Blog
         </h2>
         <div class="flex gap-x-1 lg:gap-x-4">
-            <div class="lg:w-3/12 w-4/12 hidden md:block py-8 px-4 bg-surface-0 dark:bg-surface-900 rounded-lg">
+            <div class="lg:w-3/12 w-4/12 hidden md:block py-8 px-4 bg-surface-0 dark:bg-surface-900 rounded-lg" v-if="false">
                 <div class="opacity-0 transition-opacity duration-500" :class="{'opacity-100': selectedTags.length || search != ''}">
                     <p class="text-right text-sm underline cursor-pointer hover:text-primary" @click="restoreFilters">Limpiar filtros</p>
                 </div>
                 <BlogFilters :tags="tags" />
             </div>
-            <div class="w-full md:w-8/12 lg:w-9/12 py-8 px-4 bg-surface-0 dark:bg-surface-900 rounded-lg">
-                <div class="md:hidden">
+            <div class="w-full py-8 px-4 bg-surface-0 dark:bg-surface-900 rounded-lg">
+                <div class="md:hidden" v-if="false">
                     <div class="opacity-0 transition-opacity duration-500" :class="{'opacity-100': selectedTags.length || search != ''}">
                         <p class="text-right text-sm underline cursor-pointer hover:text-primary mb-4" @click="restoreFilters">Limpiar filtros</p>
                     </div>
                     <BlogFilters />
                 </div>
-                <div class="grid lg:grid-cols-3 sm:grid-cols-2 md:gap-x-8 gap-x-4 gap-y-8 md:gap-y-4 mt-8 md:mt-0" v-if="entries?.length">
+                <div class="grid lg:grid-cols-4 sm:grid-cols-2 md:gap-x-8 gap-x-4 gap-y-8 md:gap-y-4 mt-8 md:mt-0" v-if="entries?.length">
                     <div v-for="entry in entries" class="relative group" :key="entry._path">
                         <img :src="entry.image" :alt="entry.title" class="rounded-lg md:group-hover:scale-105 transition-transform duration-500 border" />
                         <span class="block mt-3 w-0 group-hover:w-3/4 transition-all duration-500 h-0.5 bg-primary-500"></span>

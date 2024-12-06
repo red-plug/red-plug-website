@@ -39,6 +39,20 @@ export default defineNuxtConfig({
   colorMode: {
 
   },
+  icon: {
+    clientBundle: {
+      icons: [
+        'heroicons:bars-3',
+        'heroicons:computer-desktop',
+        'heroicons:sun',
+        'heroicons:moon',
+        'heroicons:cube-transparent',
+        'heroicons:document-arrow-up',
+        'heroicons:shopping-cart',
+        'heroicons:server-stack'
+      ]
+    }
+  },
   content: {
     highlight: {
         theme: 'github-dark',
