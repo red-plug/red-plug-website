@@ -39,6 +39,22 @@ export default defineNuxtConfig({
   colorMode: {
 
   },
+  content: {
+    highlight: {
+        theme: 'github-dark',
+        langs: [
+            'js',
+            'json',
+            'html',
+            'php',
+            'sql',
+            'vue-html',
+            'vue',
+            'bash',
+            'blade'
+        ]
+    }
+  },
   runtimeConfig: {
     serverToken: process.env.SERVER_TOKEN,
     public: {

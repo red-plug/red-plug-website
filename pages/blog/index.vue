@@ -19,7 +19,7 @@
                 </div>
                 <div class="grid lg:grid-cols-3 sm:grid-cols-2 md:gap-x-8 gap-x-4 gap-y-8 md:gap-y-4 mt-8 md:mt-0" v-if="entries?.length">
                     <div v-for="entry in entries" class="relative group" :key="entry._path">
-                        <img :src="entry.image" :alt="entry.title" class="rounded-lg md:group-hover:scale-105 transition-transform	duration-500 border" />
+                        <img :src="entry.image" :alt="entry.title" class="rounded-lg md:group-hover:scale-105 transition-transform duration-500 border" />
                         <span class="block mt-3 w-0 group-hover:w-3/4 transition-all duration-500 h-0.5 bg-primary-500"></span>
                         <NuxtLink :to="'/blog' + entry._path" class="after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:z-[1] after:content-['']">
                             <h3 v-text="entry.title" class="mt-1 text-lg md:text-xl font-bold group-hover:text-primary transition-colors duration-500"></h3>
@@ -81,6 +81,9 @@ const { data: entries, status } = await useAsyncData('blog-entries', () => query
                                                                         $in: selectedTags.value,
                                                                     } : {}
                                                                 })
+                                                                .sort({
+                                                                    weight: -1
+                                                                })
                                                                 .find(), {
                                                                     server: false,
                                                                     watch: [search, selectedTags]
@@ -97,5 +100,13 @@ const { data: tags } = await useAsyncData('blog-entries-tags', () => queryConten
                                                                     }) as any
 
 tags.value = useUniq(useFlatten(useMap(tags.value, 'tags')))
+
+useSeoMeta({
+    title: 'Red Plug | Blog',
+    ogTitle: 'Red Plug | Blog',
+    description: '',
+    ogDescription: '',
+    ogImage: '/images/blog/red-plug/1.webp',
+})
 
 </script>
