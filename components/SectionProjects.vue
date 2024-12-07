@@ -4,7 +4,7 @@
             Nuestros proyectos
         </h2>
         <div class="container mx-auto mt-8 flex flex-col items-center px-8 md:px-0">
-            <Galleria :value="entries" :numVisible="5" containerClass="max-w-2xl" :transitionInterval="3000" showItemNavigators showItemNavigatorsOnHover>
+            <Galleria id="projects-gallery" :value="entries" :numVisible="5" containerClass="max-w-2xl" :transitionInterval="3000" showItemNavigators showItemNavigatorsOnHover>
                 <template #item="slotProps">
                     <NuxtLink :to="'/blog' + slotProps.item._path">
                         <img :src="slotProps.item.image" :alt="slotProps.item.title" class="w-full block" />
