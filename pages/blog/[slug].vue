@@ -1,6 +1,6 @@
 <template>
     <div class="md:h-0.5 border-t"></div>
-    <section id="blog-details" v-if="data" class="mb-16">
+    <section id="blog-details" v-if="data" :key="data._path" class="mb-16">
         <div class="container mx-auto bg-surface-0 dark:bg-surface-900 md:rounded-lg shadow-inner">
             <div class="max-w-4xl mx-auto pb-8">
                 <div class="md:mt-8 p-8 md:px-4">
@@ -51,7 +51,7 @@ const { params } = useRoute()
 const router = useRouter()
 
 const _path: string =  typeof params.slug == 'string' ? params.slug : ''
-const { data } = await useAsyncData('home', () => queryContent(_path).findOne()) as any
+const { data } = await useAsyncData(`blog-${_path}`, () => queryContent(_path).findOne()) as any
 
 if(data.value == null) {
     router.push({ path: '/blog' })
