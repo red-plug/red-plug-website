@@ -19,8 +19,14 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/fonts',
     '@nuxt/content',
-    'nuxt-lodash'
+    'nuxt-lodash',
+    '@nuxtjs/sitemap'
   ],
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml']
+    }
+  },
   primevue: {
     options: {
       theme: {
@@ -74,5 +80,9 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.API_URL
     }
-  }
+  },
+  site: { 
+    url: 'https://redplug.com.mx', 
+    name: 'Red Plug' 
+  },
 })

@@ -8,6 +8,12 @@ publishDate: '2024-12-05T09:00:00+00:00'
 authorName: 'Andrés López'
 authorLink: 'https://github.com/andreslqr'
 authorImage: 'https://avatars.githubusercontent.com/u/113704516?v=4'
+
+sitemap:
+  loc: /blog/red-plug-website
+  lastmod: 2024-12-06
+  changefreq: yearly
+  priority: 0.8
 ---
 
 red plug
