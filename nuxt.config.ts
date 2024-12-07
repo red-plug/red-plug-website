@@ -20,7 +20,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/content',
     'nuxt-lodash',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
   ],
   nitro: {
     prerender: {
