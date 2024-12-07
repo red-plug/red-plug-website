@@ -1,7 +1,4 @@
 import Aura from "@primevue/themes/aura"
-import Lara from "@primevue/themes/lara"
-import Nora from "@primevue/themes/nora"
-import Material from "@primevue/themes/material"
 
 import { definePreset } from '@primevue/themes'
 

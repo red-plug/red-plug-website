@@ -15,10 +15,10 @@
                 </template>
                 <template #caption="slotProps">
                     <div class="w-full static">
-                        <div class="text-xl mb-2 font-bold font-serif">{{ slotProps.item.title }}</div>
-                        <p class="text-white">{{ slotProps.item.description }}</p>
-                        <div class="absolute right-1 top-1">
-                            <Button as="router-link" label="Router" :to="'/blog' + slotProps.item._path" size="small" severity="secondary">
+                        <div class="text-xl mb-2 font-bold font-serif text-center md:text-start">{{ slotProps.item.title }}</div>
+                        <p class="text-white hidden md:inline">{{ slotProps.item.description }}</p>
+                        <div class="absolute right-1 top-1 hidden md:block">
+                            <Button as="router-link" label="Router" :to="'/blog' + slotProps.item._path" size="small" severity="secondary"  :aria-label="`Ver más acerca de ${slotProps.item.title}`">
                                 Ver más
                             </Button>
                         </div>
@@ -27,7 +27,7 @@
                 </template>
             </Galleria>
 
-            <Button class="mt-8 px-0 md:px-8 w-full md:w-auto absolute left-0" as="router-link" label="Router" to="/blog?tags=Proyecto">
+            <Button class="mt-8 px-0 md:px-8 w-full md:w-auto absolute left-0" as="router-link" label="Router" to="/blog?tags=Proyecto"  aria-label="Name">
                 Ver todos
             </Button>
         </div>

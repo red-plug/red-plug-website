@@ -58,11 +58,11 @@ if(data.value == null) {
 }
 
 useSeoMeta({
-    title: 'Red Plug | ' + data.title,
-    ogTitle: 'Red Plug | ' + data.ogTitle,
-    description: data.description,
-    ogDescription: data.ogDescription,
-    ogImage: data.image,
+    title: 'Red Plug | ' + data.value.title,
+    ogTitle: 'Red Plug | ' + data.value.ogTitle,
+    description: data.value.description,
+    ogDescription: data.value.ogDescription,
+    ogImage: data.value.image,
 })
 
 const date = new Date(data.value.publishDate)

@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-surface-0 dark:bg-surface-900 mb-8 md:mb-0">
+    <div class="bg-surface-0 dark:bg-surface-900">
         <h2 class="text-3xl md:text-4xl font-semibold text-center pt-8 md:pt-16 px-8">
             ¿Quieres cotizar o tienes alguna duda?
         </h2>
@@ -16,15 +16,16 @@
                         </FloatLabel>
                     </Fluid>
                     <div class="flex justify-end">
-                        <Button type="submit" class="px-8 w-full md:w-auto transition-transform md:hover:scale-110 duration-300 md:hover:-translate-x-1 md:hover:translate-y-1">
+                        <Button type="submit" class="px-8 w-full md:w-auto transition-transform md:hover:scale-110 duration-300 md:hover:-translate-x-1 md:hover:translate-y-1"  aria-label="Enviar formulario">
                             Enviar 
                         </Button>
                     </div>
                 </form>
             </div>
-            <div class="col-span-1 hidden md:block">
+            <div class="col-span-1 flex justify-center items-center">
                 <ClientOnly>
                     <Vue3Lottie animationLink="/animations/animation-06.json" width="100%" height="100%" class="hidden md:block" noMargin />
+                    <Vue3Lottie animationLink="/animations/animation-06.json" width="50%" height="50%" class="block md:hidden" noMargin />
                 </ClientOnly>
             </div>
         </div>

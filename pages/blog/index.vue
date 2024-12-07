@@ -37,7 +37,7 @@
                     <p class="mt-2">
                         De momento no tenemos ninguna entrada con los parámetros de búsqueda. quiza deberías...
                     </p>
-                    <Button class="mt-4" @click="restoreFilters">
+                    <Button class="mt-4" @click="restoreFilters" aria-label="Reiniciar filtros">
                         Reiniciar filtros
                     </Button>
                 </div>
@@ -104,8 +104,8 @@ tags.value = useUniq(useFlatten(useMap(tags.value, 'tags')))
 useSeoMeta({
     title: 'Red Plug | Blog',
     ogTitle: 'Red Plug | Blog',
-    description: '',
-    ogDescription: '',
+    description: 'Explora nuestras entradas de blog donde podrás enterarte y aprender acerca de como la organización Red Plug funciona y colabora con sus aliados y clientes',
+    ogDescription: 'Explora nuestras entradas de blog donde podrás enterarte y aprender acerca de como la organización Red Plug funciona y colabora con sus aliados y clientes',
     ogImage: '/images/blog/red-plug/1.webp',
 })
 

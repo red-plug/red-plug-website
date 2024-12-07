@@ -7,7 +7,7 @@
     </Drawer>
     <div class="p-4 md:p-6 flex justify-between items-center bg-surface-0 dark:bg-surface-900 z-10">
         <div class="block md:hidden">
-            <Button type="button" severity="secondary" @click="toggleMenu">
+            <Button type="button" severity="secondary" @click="toggleMenu"  aria-label="Mostrar o esconder menú">
                 <template #icon>
                     <Icon name="heroicons:bars-3" />
                 </template>

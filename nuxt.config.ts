@@ -8,6 +8,13 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true
   },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'es'
+      }
+    }
+  },
   extends: [
     //['github:red-plug/layers-nutrix', { auth: process.env.GITHUB_TOKEN }]
   ],
