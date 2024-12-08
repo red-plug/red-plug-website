@@ -1,7 +1,10 @@
 ---
 title: 'Carlos Alfonso Stylist'
+ogTitle: 'Red Plug | Carlos Alfonso Stylist'
 description: 'Un sitio web moderno y lleno de estilo que representa y enseña lo mejor del buen vestir'
+ogDescription: 'Un sitio web moderno y lleno de estilo que representa y enseña lo mejor del buen vestir'
 image: '/images/blog/carlos-alfonso-stylist-portfolio/1.webp'
+ogImage: '/images/blog/carlos-alfonso-stylist-portfolio/1.webp'
 tags: ['Proyecto']
 weight: 1
 publishDate: '2024-12-05T09:00:00+00:00'
@@ -15,7 +18,7 @@ sitemap:
   changefreq: yearly
   priority: 0.8
 
----
+--- 
 
 Creamos un [sitio web tipo landing page para Carlos Alfonso Stylist](https://carlos-alfonso-stylist.redplug.com.mx/){target="_blank"}:
 
