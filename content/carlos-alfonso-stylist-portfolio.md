@@ -17,73 +17,20 @@ sitemap:
 
 ---
 
-# Título de Nivel 1
-## Título de Nivel 2
-### Título de Nivel 3
-#### Título de Nivel 4
-##### Título de Nivel 5
-###### Título de Nivel 6
+Creamos un [sitio web tipo landing page para Carlos Alfonso Stylist](https://carlos-alfonso-stylist.redplug.com.mx/){target="_blank"}:
 
----
+**Carlos Alfonso** es un *Fashion Stylist* que radica en [Guadalajara, Jalisco](https://maps.app.goo.gl/27aWKaX4XvbALC4L8){target="_blank"}. Un *Fashion Stylist* es una persona experta en la moda, capaz de asesorarte y guiarte en tu forma de vestir del día a día, ya sea de manera casual, elegante e incluso extravagante. Un *Fashion Stylist* puede ser tu mejor aliado.
 
-## Texto y formato básico
+Para **Carlos Alfonso Stylist**, la organización de [Red Plug]{class="text-primary font-bold"} se encargó de crear un sitio web que representa la creatividad que emana un *Fashion Stylist*.
 
-Texto normal.
+Usamos solo las mejores herramientas para diseñar este sitio web, que, aunque sencillo en su estructura de páginas (solo se requirió crear la página de inicio), es complejo en la manera en que comunica con sus visitantes.
 
-**Texto en negrita**  
-*Texto en cursiva*  
-~~Texto tachado~~  
-**_Texto en negrita y cursiva_**  
+Incorporamos bastantes recursos gráficos, ya que, como **Carlos Alfonso Stylist**, nosotros también creemos que la mejor manera de aprender es mediante el ejemplo. La página cuenta con un [sistema de reactividad](https://jonmircha.com/reactividad-javascript){target="_blank"} y [Server Side Rendering (SSR)](https://medium.com/@dgongoragamboa/qu%C3%A9-es-ssr-y-csr-una-simple-explicaci%C3%B3n-8ea0821da619){target="_blank"}, que prácticamente ya son el estándar en la industria del desarrollo web.
 
-> Este es un bloque de cita.  
-> Puede tener varias líneas.
+Dado que es un sitio web sencillo de mantener, escalar y modular, optamos por ofrecer un hosting totalmente gratuito, aprovechando la infraestructura de [GitHub Pages](https://pages.github.com/){target="_blank"}.
 
----
+En promedio, este sitio web fue diseñado, codificado y lanzado en aproximadamente dos semanas, con constante comunicación con **Carlos Alfonso Stylist**, tomando en cuenta su opinión y aportes prácticos sobre los contenidos de moda y estilo.
 
-## Listas
+¿Estás listo para cambiar tu guardarropa? [Contácta a Carlos Alfonso Stylist](https://carlos-alfonso-stylist.redplug.com.mx/#contact).
 
-### Lista desordenada
-- Elemento 1
-- Elemento 2
-  - Sub-elemento 2.1
-  - Sub-elemento 2.2
-- Elemento 3
-
-### Lista ordenada
-1. Elemento 1
-2. Elemento 2
-   1. Sub-elemento 2.1
-   2. Sub-elemento 2.2
-3. Elemento 3
-
----
-
-## Enlaces e imágenes
-
-[Enlace a Google](https://www.google.com)  
-![Imagen de ejemplo](https://via.placeholder.com/150 "Texto alternativo")
-
----
-
-## Tablas
-
-| Columna 1 | Columna 2 | Columna 3 |
-|-----------|-----------|-----------|
-| Fila 1    | Dato 1.2  | Dato 1.3  |
-| Fila 2    | Dato 2.2  | Dato 2.3  |
-| Fila 3    | Dato 3.2  | Dato 3.3  |
-
----
-
-## Código
-
-### Código en línea
-Este es un ejemplo de código en línea: `console.log('Hola, mundo');`
-
-### Bloque de código
-```javascript
-function saludo(nombre) {
-    console.log(`Hola, ${nombre}`);
-}
-saludo('Mundo');
-```
+¿Estás preparado para compartir tus ideas en internet? Contácta a [Red Plug](/#contact){class="text-primary font-bold"}.

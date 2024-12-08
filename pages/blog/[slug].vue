@@ -71,7 +71,7 @@ const month = (date.getUTCMonth() + 1).toString().padStart(2, '0')
 const year = date.getUTCFullYear()
 const publishDate = `${day}/${month}/${year}`
 
-const { data: entries, status } = await useAsyncData('blog-entries', () => queryContent().only(['_path', 'title', 'description', 'image'])
+const { data: entries, status } = await useAsyncData('blog-entries-latest', () => queryContent().only(['_path', 'title', 'description', 'image'])
                                                                 .where({
                                                                     draft: {
                                                                         $not: true

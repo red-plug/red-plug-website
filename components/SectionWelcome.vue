@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen md:h-auto flex md:items-center bg-surface-0 dark:bg-surface-900">
+    <div class="h-[80vh] md:h-auto flex md:items-center bg-surface-0 dark:bg-surface-900">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:px-16 px-8">
             <div class="col-span-1 h-full md:ps-8 flex flex-col md:justify-center order-1 md:order-none">
                 <h2 class="text-4xl md:text-5xl font-semibold">

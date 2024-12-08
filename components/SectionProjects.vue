@@ -45,6 +45,9 @@ const { data: entries } = await useAsyncData('home-entries', () => queryContent(
                                                                         $not: true
                                                                     }
                                                                 })
+                                                                .sort({
+                                                                    weight: -1
+                                                                })
                                                                 .limit(15)
                                                                 .find(), {
                                                                     server: true

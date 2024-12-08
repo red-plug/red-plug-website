@@ -67,7 +67,7 @@ const restoreFilters = () => {
     search.value = ''
 }
 
-const { data: entries, status } = await useAsyncData('blog-entries', () => queryContent().only(['_path', 'title', 'description', 'image'])
+const { data: entries, status } = await useAsyncData('blog-entries' + '-search:' + search.value + 'tags:' + selectedTags.value.join(','), () => queryContent().only(['_path', 'title', 'description', 'image'])
                                                                 .where({
 
                                                                     draft: {
