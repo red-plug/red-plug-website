@@ -12,7 +12,14 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         lang: 'es'
-      }
+      },
+      script: [
+        {
+          src: 'https://analytics.ahrefs.com/analytics.js',
+          'data-key': 'XLSOG9giSV+ZdWNOfyrkfA',
+          async: true
+        }
+      ]
     }
   },
   extends: [
