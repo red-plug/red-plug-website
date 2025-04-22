@@ -38,10 +38,10 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        '/andres',
-        '/fernando',
-        '/gustavo',
-        '/william',
+        // '/andres',
+        // '/fernando',
+        // '/gustavo',
+        // '/william',
       ]
     }
   },
