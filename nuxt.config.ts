@@ -26,7 +26,6 @@ export default defineNuxtConfig({
     //['github:red-plug/layers-nutrix', { auth: process.env.GITHUB_TOKEN }]
   ],
   modules: [
-    '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
     '@primevue/nuxt-module',
     '@nuxtjs/color-mode',
