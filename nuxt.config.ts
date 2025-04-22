@@ -33,12 +33,16 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/content',
     'nuxt-lodash',
-    '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],
   nitro: {
     prerender: {
-      routes: ['/sitemap.xml']
+      routes: [
+        '/andres',
+        '/fernando',
+        '/gustavo',
+        '/william',
+      ]
     }
   },
   primevue: {
@@ -74,19 +78,26 @@ export default defineNuxtConfig({
     }
   },
   content: {
-    highlight: {
-        theme: 'github-dark',
-        langs: [
-            'js',
-            'json',
-            'html',
-            'php',
-            'sql',
-            'vue-html',
-            'vue',
-            'bash',
-            'blade'
-        ]
+    build: {
+      markdown: {
+        highlight: { 
+          theme: {
+            default: 'slack-ochin',
+            dark: 'one-dark-pro',
+          },
+          langs: [
+              'js',
+              'json',
+              'html',
+              'php',
+              'sql',
+              'vue-html',
+              'vue',
+              'bash',
+              'blade'
+          ]
+        }
+      }
     }
   },
   runtimeConfig: {
