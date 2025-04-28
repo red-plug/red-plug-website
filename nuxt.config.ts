@@ -41,6 +41,10 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
+        '/_ipx/s_900x500/images/blog/carlos-alfonso-stylist-portfolio/1.webp',
+        '/_ipx/s_900x500/images/blog/red-plug-website-2/1.webp',
+        '/_ipx/s_900x500/images/blog/andres-lopez-portfolio/1.webp',
+        '/_ipx/s_900x500/images/blog/red-plug-website/1.webp',
         // '/andres',
         // '/fernando',
         // '/gustavo',
