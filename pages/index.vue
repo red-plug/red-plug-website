@@ -1,14 +1,14 @@
 <template>
-    <section id="welcome">
+    <section id="welcome" class="scroll-mt-24">
         <SectionWelcome />
     </section>
-    <section id="projects">
+    <section id="projects" class="scroll-mt-24">
         <SectionProjects />
     </section>
-    <section id="services">
+    <section id="services" class="scroll-mt-24">
         <SectionServices />
     </section>
-    <section id="contact">
+    <section id="contact" class="scroll-mt-24">
         <SectionContact />
     </section>
 </template>

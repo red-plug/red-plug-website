@@ -1,32 +1,45 @@
 <template>
-    <Drawer v-model:visible="showMenu">
-        <template #header>
-            <AppLogo />
-        </template>
-        <AppMenu  @item-click="toggleMenu" />
-    </Drawer>
-    <div class="p-4 md:p-6 flex justify-between items-center bg-surface-0 dark:bg-surface-900 z-10">
+  <Drawer v-model:visible="showMenu">
+    <template #header>
+      <AppLogo />
+    </template>
+    <AppMenu @item-click="toggleMenu" />
+  </Drawer>
+  <header class="sticky top-0 py-2 z-50 backdrop-blur-md">
+    <div class="container mx-auto px-2">
+      <nav class="flex justify-between p-2 items-center">
         <div class="block md:hidden">
-            <Button type="button" severity="secondary" @click="toggleMenu"  aria-label="Mostrar o esconder menú">
-                <template #icon>
-                    <Icon name="heroicons:bars-3" />
-                </template>
-            </Button>
+          <Button class="shadow-md" type="button" severity="secondary" @click="toggleMenu" aria-label="Mostrar o esconder menú" rounded outlined>
+            <template #icon>
+              <Icon name="heroicons:bars-3" />
+            </template>
+          </Button>
         </div>
-        <AppLogo />
-        <div class="flex gap-x-14 items-center">
-            <AppMenu class="hidden md:flex" />
-            <DarkModeSwitch />
+        <div>
+          <AppLogo />
         </div>
+        <div class="flex items-center">
+          <AppMenu class="hidden md:flex" />
+          <DarkModeSwitch />
+        </div>
+      </nav>
     </div>
+  </header>
 </template>
 
 <script setup lang="ts">
+const { y: verticalWindowScroll } = useWindowScroll()
 
 const showMenu = ref(false)
+const showHeaderBackground = ref(false)
+const scrollThreshold = ref(50)
 
 const toggleMenu = () => {
-    showMenu.value = !showMenu.value
+  showMenu.value = !showMenu.value
 }
+
+watch(verticalWindowScroll, async (value) => {
+    showHeaderBackground.value = value > scrollThreshold.value
+})
 
 </script>

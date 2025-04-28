@@ -1,7 +1,7 @@
 <template>
-    <div class="md:h-0.5 border-t"></div>
+    <div class="md:h-0.5"></div>
     <section id="blog-details" v-if="post" :key="post.id" class="mb-16">
-        <div class="container mx-auto bg-surface-0 dark:bg-surface-900 md:rounded-lg shadow-inner">
+        <div class="container mx-auto bg-surface-50 dark:bg-surface-900 md:rounded-lg">
             <div class="max-w-4xl mx-auto pb-8">
                 <div class="md:mt-8 p-8 md:px-4">
                     <h2 class="text-center text-4xl md:text-5xl font-semibold py-9 font-serif" v-text="post.title"> 
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto bg-surface-0 dark:bg-surface-900 md:rounded-lg shadow-inner mt-8 pb-8 pt-8">
+        <div class="container mx-auto bg-surface-0 dark:bg-surface-900 md:rounded-lg mt-8 pb-8 pt-8">
             <div class="mb-8">
                 <h2 class="text-3xl md:text-4xl font-semibold text-center">
                     Últimas publicaciones
@@ -47,10 +47,10 @@
 </template>
 <script setup lang="ts">
 
-const { params } = useRoute()
+const route = useRoute()
 const router = useRouter()
 
-const path: string =  typeof params.slug == 'string' ? params.slug : ''
+const { slug: path } = route.params
 const { data: post } = await useAsyncData(`blog/${path}`, () => queryCollection('blog').path(`/blog/${path}`).first())
 
 if(post.value == null) {

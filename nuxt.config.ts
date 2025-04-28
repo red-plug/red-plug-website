@@ -11,7 +11,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: 'es'
+        lang: 'es',
+        class: 'scroll-smooth'
       },
       script: [
         {
@@ -20,7 +21,7 @@ export default defineNuxtConfig({
           async: true
         }
       ]
-    }
+    },
   },
   extends: [
     //['github:red-plug/layers-nutrix', { auth: process.env.GITHUB_TOKEN }]
@@ -34,6 +35,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-lodash',
     '@nuxtjs/robots',
+    '@vueuse/nuxt',
+    '@nuxt/image',
   ],
   nitro: {
     prerender: {
@@ -50,7 +53,7 @@ export default defineNuxtConfig({
       theme: {
         preset: Theme,
         options: {
-          darkModeSelector: '.dark-mode',
+          darkModeSelector: '.dark',
           cssLayer: {
             name: 'primevue',
             order: 'tailwind-base, primevue, tailwind-utilities'
@@ -61,7 +64,7 @@ export default defineNuxtConfig({
     },
   },
   colorMode: {
-
+    classSuffix: ''
   },
   icon: {
     clientBundle: {

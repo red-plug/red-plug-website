@@ -1,5 +1,5 @@
 <template>
-    <Button type="button" severity="secondary" @click="changeTheme" aria-label="Cambiar modo oscuro">
+    <Button class="shadow-md" type="button" severity="secondary" @click="changeTheme" aria-label="Cambiar modo oscuro" outlined rounded>
         <template #icon>
             <Icon :name="selectedTheme.icon" />
         </template>
