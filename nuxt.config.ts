@@ -37,6 +37,7 @@ export default defineNuxtConfig({
     'nuxt-lodash',
     '@nuxtjs/robots',
     '@nuxt/image',
+    'nuxt-vitalizer',
   ],
   nitro: {
     prerender: {
