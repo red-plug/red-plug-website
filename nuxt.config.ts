@@ -49,10 +49,10 @@ export default defineNuxtConfig({
         '/_ipx/s_1800x1000/images/blog/red-plug-website-2/1.webp',
         '/_ipx/s_1800x1000/images/blog/andres-lopez-portfolio/1.webp',
         '/_ipx/s_1800x1000/images/blog/red-plug-website/1.webp',
-        // '/andres',
-        // '/fernando',
-        // '/gustavo',
-        // '/william',
+        '/team/andres',
+        '/team/fernando',
+        '/team/gustavo',
+        '/team/william',
       ]
     }
   },
