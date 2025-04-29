@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import Button from "primevue/button"
 import Theme from "./themes/default"
 
 export default defineNuxtConfig({
@@ -35,7 +36,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-lodash',
     '@nuxtjs/robots',
-    '@vueuse/nuxt',
     '@nuxt/image',
   ],
   nitro: {
@@ -70,6 +70,21 @@ export default defineNuxtConfig({
       },
       ripple: true,
     },
+    components: {
+      include: [
+        'Button',
+        'Textarea',
+        'Drawer',
+        'Fluid',
+        'FloatLabel',
+        'Avatar'
+      ]
+    },
+    directives: {
+      include: [
+        'Ripple'
+      ]
+    },
   },
   colorMode: {
     classSuffix: ''
@@ -97,15 +112,15 @@ export default defineNuxtConfig({
             dark: 'one-dark-pro',
           },
           langs: [
-              'js',
-              'json',
-              'html',
-              'php',
-              'sql',
-              'vue-html',
-              'vue',
-              'bash',
-              'blade'
+            'js',
+            'json',
+            'html',
+            'php',
+            'sql',
+            'vue-html',
+            'vue',
+            'bash',
+            'blade'
           ]
         }
       }

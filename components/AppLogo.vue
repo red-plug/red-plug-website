@@ -2,7 +2,7 @@
     <div class="font-serif text-1xl sm:text-3xl group">
         <NuxtLink href="/">
             <div class="flex items-center">
-                <NuxtImg src="/logo/red-plug-responsive.svg" alt="Red Plug Logo" :class="getImgClass" />
+                <NuxtImg src="/logo/red-plug-responsive.svg" height="300" alt="Red Plug Logo" :class="getImgClass" />
                 <h3 class="hidden sm:block md:hidden">
                     RP
                 </h3>

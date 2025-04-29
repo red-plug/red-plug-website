@@ -18,13 +18,13 @@
             </div>
           </div>
           <div class="my-8 md:my-12 flex justify-center gap-x-8 text-3xl text-gray-700 dark:text-gray-400 md:w-1/2">
-            <a href="https://www.linkedin.com/company/red-plug" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/red-plug" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Icon name="cib:linkedin" class="hover:text-primary-500" />
             </a>
-            <a href="https://github.com/red-plug" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/red-plug" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Icon name="cib:github" class="hover:text-primary-500" />
             </a>
-            <a href="https://www.instagram.com/red-plug/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/red-plug/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Icon name="cib:instagram" class="hover:text-primary-500" />
             </a>
           </div>
@@ -32,9 +32,9 @@
         <div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-x-1 sm:gap-x-4 px-4 sm:px-8 md:px-0">
           <div class="col-span-1">
             <nav class="grid grid-cols-1 justify-items-center md:flex md:flex-col opacity-75">
-              <h6 class="font-serif uppercase font-medium opacity-60 mb-2">
+              <h3 class="font-serif uppercase font-medium opacity-60 mb-2">
                 Servicios
-              </h6>
+              </h3>
               <NuxtLink to="/#welcome" class="mb-2 hover:underline hover:text-primary-500">
                 Inicio
               </NuxtLink>
@@ -51,9 +51,9 @@
           </div>
           <div class="col-span-1">
             <nav class="grid grid-cols-1 justify-items-center md:flex md:flex-col opacity-75">
-              <h6 class="font-serif uppercase font-medium opacity-60 mb-2">
+              <h3 class="font-serif uppercase font-medium opacity-60 mb-2">
                 Organización
-              </h6>
+              </h3>
               <NuxtLink to="/nosotros" class="mb-2 hover:underline hover:text-primary-500">
                 Nosotros
               </NuxtLink>

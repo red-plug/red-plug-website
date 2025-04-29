@@ -20,17 +20,17 @@
             </div>
           </div>
           <div class="flex justify-evenly mt-8">
-            <Button as="a" :href="contact.linkedin" target="_blank" class="shadow-sm" type="button" severity="secondary" aria-label="LinkedIn"  rounded>
+            <Button as="a" :href="contact.linkedin" target="_blank" class="shadow-sm" type="button" severity="secondary" aria-label="LinkedIn" rounded>
               <template #icon>
                   <Icon name="cib:linkedin" class="text-[#0E76A8]" />
               </template>
             </Button>
-            <Button as="a" :href="contact.github" target="_blank" class="shadow-sm" type="button" severity="secondary" aria-label="GitHub"  rounded>
+            <Button as="a" :href="contact.github" target="_blank" class="shadow-sm" type="button" severity="secondary" aria-label="GitHub" rounded>
               <template #icon>
                   <Icon name="cib:github" class="text-[#000]" />
               </template>
             </Button>
-            <Button v-if="contact.twitter" as="a" :href="contact.twitter" target="_blank" class="shadow-sm" type="button" severity="secondary" aria-label="Twitter"  rounded>
+            <Button v-if="contact.twitter" as="a" :href="contact.twitter" target="_blank" class="shadow-sm" type="button" severity="secondary" aria-label="Twitter" rounded>
               <template #icon>
                   <Icon name="cib:twitter" class="text-[#08A0E9]" />
               </template>
@@ -42,7 +42,7 @@
             </Button>
           </div>
           <div class="flex justify-center w-full portrait:-mb-10 mt-8">
-            <Button size="large" class="bg-primary-500 hover:bg-primary-600 text-white portrait:w-full" raised rounded @click="saveContact">
+            <Button size="large" class="bg-primary-500 hover:bg-primary-600 text-white portrait:w-full"  aria-label="Guardar contacto" raised rounded @click="saveContact">
               Guardar Contacto
             </Button>
           </div>

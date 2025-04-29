@@ -66,19 +66,23 @@
             </Motion>
           </Motion>
           <div class="items-center justify-center my-6 hidden md:flex">
-            <Button as="router-link" :to="props.presentation[active].url" class="text-surface-50">
+            <Button as="router-link" :to="props.presentation[active].url" class="text-surface-50" aria-label="Mostrar publicación">
               Ver más
             </Button>
           </div>
         </Motion>
         <div class="flex justify-evenly md:justify-start gap-4 pt-4">
           <button
+            type="button"
+             aria-label="Anterior"
             class="group/button flex h-16 w-16 md:h-8 md:w-8 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
             @click="handlePrev">
             <Icon name="heroicons:arrow-left"
               class="text-2xl md:text-lg text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
           </button>
           <button
+            type="button"
+            aria-label="Siguiente"
             class="group/button flex h-16 w-16 md:h-8 md:w-8 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
             @click="handleNext">
             <Icon name="heroicons:arrow-right"

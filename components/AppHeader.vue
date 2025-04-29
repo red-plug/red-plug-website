@@ -28,18 +28,10 @@
 </template>
 
 <script setup lang="ts">
-const { y: verticalWindowScroll } = useWindowScroll()
 
 const showMenu = ref(false)
-const showHeaderBackground = ref(false)
-const scrollThreshold = ref(50)
 
 const toggleMenu = () => {
   showMenu.value = !showMenu.value
 }
-
-watch(verticalWindowScroll, async (value) => {
-    showHeaderBackground.value = value > scrollThreshold.value
-})
-
 </script>
