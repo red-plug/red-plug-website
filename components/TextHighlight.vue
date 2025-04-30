@@ -1,5 +1,5 @@
 <template>
-  <span :class="cn('inline-block px-1 pb-1', props.class)">
+  <span :class="cn('inline-block px-1 pb-1', isHydrated ? 'animated-highlight' : '', props.class)">
     <slot />
   </span>
 </template>
@@ -7,6 +7,14 @@
 <script setup lang="ts">
 import { type HTMLAttributes } from "vue"
 import { cn } from "@/lib/utils"
+
+const isHydrated = ref(false)
+
+onMounted(() => {
+  requestAnimationFrame(() => {
+    isHydrated.value = true
+  })
+})
 
 interface Props {
   delay?: number;
@@ -46,7 +54,7 @@ const durationMs = computed(() => `${props.duration}ms`)
   }
 }
 
-span {
+.animated-highlight {
   background-size: 0% 100%;
   background-repeat: no-repeat;
   background-position: left center;
