@@ -79,7 +79,7 @@ const year = date.getUTCFullYear()
 const publishDate = `${day}/${month}/${year}`
 
 const { data: entries, status } = await useAsyncData('blog-entries-latest', () => queryCollection('blog').select('id', 'path', 'title', 'description', 'image', 'weight')
-  .order('weight', 'ASC')
+  .order('weight', 'DESC')
   .limit(4)
   .all())
 
