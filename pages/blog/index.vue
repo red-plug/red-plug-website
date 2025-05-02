@@ -42,7 +42,7 @@
 <script setup lang="ts">
 const { data: entries, status } = await useAsyncData('blog-entries', () => queryCollection('blog')
                                                                                 .select('id', 'path', 'title', 'description', 'image', 'weight')
-                                                                                .order('weight', 'ASC')
+                                                                                .order('weight', 'DESC')
                                                                                 .all())
 
 useSeoMeta({
