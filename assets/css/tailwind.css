@@ -117,3 +117,7 @@
 #blog-content h6 a {
     @apply no-underline text-inherit;
 }
+
+#blog-content p > img {
+    @apply max-w-full h-auto rounded-lg shadow-md;
+}
