@@ -119,5 +119,5 @@
 }
 
 #blog-content p > img {
-    @apply max-w-full h-auto rounded-lg shadow-md;
+    @apply max-w-full h-auto rounded-lg shadow-md mx-auto my-4;
 }
