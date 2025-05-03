@@ -7,7 +7,7 @@
           <h1 v-text="contact.name + ' ' + contact.lastName" class="text-center font-serif text-3xl font-medium text-gray-900 dark:text-gray-100"></h1>
           <h2 v-text="contact.role" class="text-center text-xl mt-1 font-extralight text-gray-900 dark:text-gray-200"></h2>
           
-          <div class="flex justify-center mt-6">
+          <div class="flex justify-center mt-6 text-lg">
             <div>
               <a v-if="contact.number" class="hover:underline hover:text-primary flex items-center" :href="`tel:${contact.number}`">
                 <Icon name="heroicons:phone" class="text-primary-500 dark:text-primary-300 mr-1" />
@@ -74,7 +74,6 @@
 </template>
 <script setup lang="ts">
 const route = useRoute()
-const router = useRouter()
 
 const { name } = route.params
 
@@ -123,7 +122,11 @@ const saveContact = async () => {
 }
 
 if (contact.value == null) {
-  router.push({ path: '/' })
+  throw createError({
+    statusCode: 404,
+    statusMessage: `Page not found: ${route.path}`,
+    fatal: true,
+  })
 }
 
 definePageMeta({
@@ -131,12 +134,11 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Red Plug | ' + name,
-  ogTitle: 'Red Plug | ' + name,
-  description: 'Red Plug | ' + name,
-  ogDescription: 'Red Plug | ' + name,
-  ogImage: '/images/logo.png',
-    
+  title: `Red Plug | ${contact.value.name} ${contact.value.lastName}`,
+  ogTitle: `Red Plug | ${contact.value.name} ${contact.value.lastName}`,
+  description: `Conoce a ${contact.value.name} ${contact.value.lastName}, ${contact.value.role} en Red Plug`,
+  ogDescription: `Conoce a ${contact.value.name} ${contact.value.lastName}, ${contact.value.role} en Red Plug`,
+  ogImage: contact.value.image,
 })
 
 useHead({
