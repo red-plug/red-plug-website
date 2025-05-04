@@ -24,7 +24,7 @@
             <a href="https://github.com/red-plug" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Icon name="cib:github" class="hover:text-primary-500" />
             </a>
-            <a href="https://www.instagram.com/red-plug/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/redplugmx/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Icon name="cib:instagram" class="hover:text-primary-500" />
             </a>
           </div>
