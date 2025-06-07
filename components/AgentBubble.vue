@@ -1,9 +1,9 @@
 <template>
-  <article @click="contact" v-if="agent" class="fixed w-10 h-10 bg-primary-500 right-6 bottom-8 bubble-button rounded-full cursor-pointer">
+  <article @click="contact" v-if="agent" class="fixed w-10 h-10 right-6 bottom-8 bubble-button rounded-full cursor-pointer">
     <NuxtImg :src="agent.image" class="w-10 h-10 rounded-full" />
     <Transition>
       <span class="block absolute -left-32 bottom-1 rounded-l-md rounded-tr-md bg-primary-700 text-gray-50 px-2 py-1 text-sm" v-if="showMessage">
-        Cotizá conmigo
+        Cotiza conmigo
       </span>
     </Transition>
   </article>
