@@ -24,6 +24,32 @@ export default defineNuxtConfig({
       ]
     },
   },
+  routeRules: {
+    '/a': {
+      redirect: {
+        to: '/?agent=a',
+        statusCode: 301
+      }
+    },
+    '/f': {
+      redirect: {
+        to: '/?agent=f',
+        statusCode: 301
+      }
+    },
+    '/g': {
+      redirect: {
+        to: '/?agent=g',
+        statusCode: 301
+      }
+    },
+    '/w': {
+      redirect: {
+        to: '/?agent=w',
+        statusCode: 301
+      }
+    },
+  },
   extends: [
     //['github:red-plug/layers-nutrix', { auth: process.env.GITHUB_TOKEN }]
   ],

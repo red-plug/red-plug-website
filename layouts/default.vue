@@ -3,6 +3,7 @@
     <AppHeader />
     <slot />
     <ScrollTop />
+    <AgentBubble />
     <footer>
       <AppFooter />
     </footer>
