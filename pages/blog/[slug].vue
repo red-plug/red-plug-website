@@ -10,7 +10,7 @@
             Publicado el {{ publishDate }} <span v-if="post.authorName"> por <a v-text="post.authorName"
                 :href="post.authorUrl" target="_blank" rel="noopener noreferrer" class="text-primary"></a> </span>
           </span>
-          <img :src="post.image" :alt="post.title" class="border rounded-lg shadow-lg shadow-primary-500/50" />
+          <NuxtImg :src="post.image" :alt="post.title" class="border rounded-lg shadow-lg shadow-primary-500/50" />
           <div id="blog-content" class="my-8">
             <ContentRenderer :value="post" />
           </div>

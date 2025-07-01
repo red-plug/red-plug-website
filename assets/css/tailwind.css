@@ -89,7 +89,7 @@
 }
 
 #blog-content pre {
-    @apply bg-gray-800 rounded-md p-4 my-4 overflow-auto;
+    @apply bg-gray-100 dark:bg-gray-800 rounded-md p-4 my-4 overflow-auto;
 }
 
 #blog-content pre > code {
